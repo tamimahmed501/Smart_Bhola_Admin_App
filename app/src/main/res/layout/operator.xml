@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="5dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/subject"
+                    android:background="#4BC2F8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ব্যালেন্স চেক"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/mustafakamal"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="অপারেটরঃ জিপি"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:paddingLeft="10dp"
+                android:textStyle="normal"/>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ডায়াল কোডঃ  *1#"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:paddingLeft="10dp"
+                android:textStyle="normal"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+
+
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/edit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+
+
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/delete"
+                    android:layout_alignParentRight="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

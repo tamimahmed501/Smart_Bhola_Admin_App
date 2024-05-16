@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4FA"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/statusbar"
+                android:layout_height="45dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/anadika"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="User ID:"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/mustafakamal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="18dp"
+                    android:text="0"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="18dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Amount: 200 tk"
+                            android:fontFamily="@font/hind"
+                            android:textSize="17dp"
+                            android:paddingTop="6dp"
+                            android:textColor="#FF4141"/>
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/catagory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Catagory:  Adjustment"
+                            android:fontFamily="@font/hind"
+                            android:textSize="17dp"
+                            android:textColor="#333333"/>
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Time:  12:45 AM, 23/01/2024"
+                            android:fontFamily="@font/hind"
+                            android:textSize="16dp"
+                            android:textColor="#323232"/>
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/admin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Submit By: Tamim Ahmed"
+                            android:fontFamily="@font/hind"
+                            android:textSize="16dp"
+                            android:textColor="#323232"/>
+
+                        <TextView
+                            android:id="@+id/note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Note: Nothing"
+                            android:fontFamily="@font/hind"
+                            android:textSize="16dp"
+                            android:textColor="#323232"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/adjustbalance"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

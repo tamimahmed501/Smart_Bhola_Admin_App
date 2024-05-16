@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7E7"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="280dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/transfer"
+                            android:layout_centerInParent="true"
+                            android:padding="5dp"/>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+
+
+
+                            <TextView
+                                android:id="@+id/route1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মাইজপাড়া"
+                                android:paddingLeft="10dp"
+                                android:textSize="19dp"
+                                android:gravity="center|left"
+                                android:paddingTop="5dp"
+                                android:textStyle="bold"
+                                android:textColor="#E8151515"
+                                android:fontFamily="@font/hind"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"/>
+
+
+
+                            <TextView
+                                android:id="@+id/route2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="তুলারামপুর"
+                                android:paddingTop="5dp"
+                                android:paddingRight="10dp"
+                                android:textSize="19dp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="#E8151515"
+                                android:gravity="center|right"
+                                android:fontFamily="@font/hind"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Way:  Local"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:paddingTop="30dp"
+                        android:gravity="center"
+                        android:textColor="#E8000000"
+                        android:fontFamily="@font/hind"/>
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="পথের দুরত্বঃ   45  কিঃমি"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textColor="#E8000000"
+                        android:fontFamily="@font/hind"/>
+
+                    <TextView
+                        android:id="@+id/local"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="সাধারন ভাড়াঃ    ২০ টাকা"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textColor="#E8000000"
+                        android:fontFamily="@font/hind"/>
+
+
+                    <TextView
+                        android:id="@+id/student"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="স্টুডেন্ট ভাড়াঃ    ১৫ টাকা"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textColor="#E8000000"
+                        android:fontFamily="@font/hind"/>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                android:weightSum="2">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#323232"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/delete1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DELETE"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:textColor="@color/white"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#373636"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="EDIT"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

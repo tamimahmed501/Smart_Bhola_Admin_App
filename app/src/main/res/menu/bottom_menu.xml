@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:id="@+id/home"
+        android:iconTint="#000000"
+        android:icon="@drawable/home"
+
+        />
+
+    <item android:title=""
+        android:id="@+id/appointment"
+        android:iconTint="#000000"
+        android:iconTintMode="src_atop"
+        android:icon="@drawable/appointment"
+
+        />
+
+
+    <item android:title=""
+        android:id="@+id/offer"
+        android:iconTint="#000000"
+        android:icon="@drawable/sim"
+
+        />
+
+
+
+    <item android:title=""
+        android:id="@+id/announce"
+        android:iconTint="#000000"
+        android:icon="@drawable/samplelogo"
+
+        />
+
+
+
+
+
+    <item android:title=""
+        android:id="@+id/user"
+        android:iconTint="#000000"
+        android:icon="@drawable/user"
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>

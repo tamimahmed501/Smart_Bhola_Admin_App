@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".splash">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/paint"
+            android:gravity="center"
+            android:text="Welcome to"
+            android:textColor="@color/statusbar"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/paint"
+            android:gravity="center"
+            android:text="SMART BHOLA CONTROLER"
+            android:textColor="@color/statusbar"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="62dp"
+        android:layout_marginTop="140dp"
+        android:scaleType="fitCenter"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/cpanel" />
+
+
+
+    <TextView
+        android:id="@+id/bittom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0590FF"
+        android:text="©SMART_BHOLA"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/paint"/>
+
+
+
+</RelativeLayout>

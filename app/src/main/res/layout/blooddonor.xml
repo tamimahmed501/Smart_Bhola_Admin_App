@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E4EC"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/mainlay"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bloodradious"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="তামিম আহমেদ অভি"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|top"
+                        android:textStyle="normal"
+                        android:paddingTop="10dp"
+                        android:fontFamily="@font/hind"/>
+
+
+                    <TextView
+                        android:id="@+id/adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="মাইজপাড়া, নড়াইল সদর"
+                        android:textColor="#3E3E3E"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|top"
+                        android:textStyle="normal"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/hind3"/>
+
+
+                    <TextView
+                        android:id="@+id/lastdonate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শেষ রক্তদানঃ  11/03/2024"
+                        android:textColor="#3E3E3E"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|top"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/hind3"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID: 12"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:textSize="17dp"
+                    android:textColor="#EB2C2C2C"
+                    android:fontFamily="@font/mustafakamal"/>
+
+
+                <TextView
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B+"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FF0B0B"
+                    android:fontFamily="@font/timesnewroman"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

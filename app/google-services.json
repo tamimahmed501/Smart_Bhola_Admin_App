@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "162571303249",
+    "project_id": "smart-bhola-admin",
+    "storage_bucket": "smart-bhola-admin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162571303249:android:ad7708e6f098ecc5443b70",
+        "android_client_info": {
+          "package_name": "com.tamim.smartbholaadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1GsKt4dWO261_OnKomXBxv0EF1SHcAXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

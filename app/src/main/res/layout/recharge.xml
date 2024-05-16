@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4FA"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/statusbar"
+                android:layout_height="45dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/anadika"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="Recharge ID:"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/mustafakamal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="18dp"
+                    android:text="0"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="18dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/operator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Operator: ROBI"
+                            android:fontFamily="@font/hind"
+                            android:textSize="17dp"
+                            android:paddingTop="6dp"
+                            android:textColor="#FF4141"/>
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="User: Tasnim Jara"
+                            android:fontFamily="@font/hind"
+                            android:textSize="17dp"
+                            android:textColor="#333333"/>
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TIME: 12:45 AM, 23/01/2024"
+                            android:fontFamily="@font/hind"
+                            android:textSize="16dp"
+                            android:textColor="#323232"/>
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TYPE: : POSTPAID"
+                            android:fontFamily="@font/hind"
+                            android:textSize="16dp"
+                            android:textColor="#323232"/>
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="STATUS: Pending"
+                            android:fontFamily="@font/hind"
+                            android:textSize="16dp"
+                            android:textColor="#323232"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Past Balance:"
+                                android:fontFamily="@font/hind"
+                                android:textColor="#323232"
+                                android:textSize="16dp"/>
+
+
+                            <TextView
+                                android:id="@+id/pastbalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/hind"
+                                android:paddingRight="10dp"
+                                android:text="30 TK:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Present Balance: "
+                                android:fontFamily="@font/hind"
+                                android:textColor="#323232"
+                                android:textSize="16dp"/>
+
+
+                            <TextView
+                                android:id="@+id/presentbalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/hind"
+                                android:paddingRight="10dp"
+                                android:text="30 TK:"
+                                android:textColor="#323232"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hind"
+                                android:text="Recharge Amount:"
+                                android:textColor="#323232"
+                                android:textSize="17dp"/>
+
+
+                            <TextView
+                                android:id="@+id/amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/hind"
+                                android:paddingRight="10dp"
+                                android:text="30 TK"
+                                android:textColor="#E43131"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/hind"
+                                android:text="Number:"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"/>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="160dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+
+                                <TextView
+                                    android:id="@+id/number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="01610069765"
+                                    android:fontFamily="@font/hind"
+                                    android:textStyle="normal"
+                                    android:gravity="center"
+                                    android:textColor="#151515"
+                                    android:textSize="19dp"/>
+
+
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <ImageView
+                                android:id="@+id/copy"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:src="@drawable/baseline_content_copy_24" />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/proccesslay"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/proccessing"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                app:cardCornerRadius="5dp">
+
+
+                                <TextView
+                                    android:id="@+id/admin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/statusbar"
+                                    android:text="Mark as Proccessing"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:maxLines="1"
+                                    android:fontFamily="@font/mustafakamal"/>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/processlay2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:visibility="visible"
+                            android:layout_marginBottom="10dp"
+                            android:weightSum="2">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginRight="5dp"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:layout_weight="1">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="CANCEL"
+                                    android:background="#00BCD4"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:textSize="17dp"
+                                    android:fontFamily="@font/mustafakamal"/>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/success"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="8dp"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:layout_weight="1">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="SUCCESS"
+                                    android:background="#00BCD4"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:textSize="17dp"
+                                    android:fontFamily="@font/mustafakamal"/>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/robi"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

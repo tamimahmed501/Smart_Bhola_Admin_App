@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".appointment">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/topbar"
+        android:layout_height="45dp">
+
+
+
+
+
+        <TextView
+            android:id="@+id/toptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="শিক্ষক নিবন্ধন ও টিউশন এপ্রুভাল"
+            android:textStyle="bold"
+            android:fontFamily="@font/hind3"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="4dp"
+            android:padding="8dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#92CADEED"
+        app:tabIndicatorColor="@color/black"
+        app:tabTextColor="#303030"
+        app:tabSelectedTextColor="@color/black"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/tabLayout">
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="পেন্ডিং"/>
+
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="এপ্রুভড"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="পেন্ডিং পোস্ট"/>
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="এপ্রুভড"/>
+
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="69dp"
+        android:id="@+id/framelayout"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

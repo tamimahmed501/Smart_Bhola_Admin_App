@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawerLayout"
+    tools:context="com.tamim.smartbholaadmin.MainActivity">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:id="@+id/frame"/>
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/smoothbottomber"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            app:backgroundColor="@color/statusbar"
+            app:indicatorRadius="30dp"
+            app:indicatorColor="#FFFFFF"
+            android:soundEffectsEnabled="true"
+            app:iconTint="#EAEAEA"
+            android:outlineAmbientShadowColor="@color/black"
+            android:layout_marginTop="3dp"
+            app:iconSize="28dp"
+            app:iconTintActive="@color/statusbar"
+            android:isScrollContainer="true"
+            app:menu="@menu/bottom_menu"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

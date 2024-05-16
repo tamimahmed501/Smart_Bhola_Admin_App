@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#404040</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="topbar">#007685</color>
+    <color name="splash">#79C3FF</color>
+    <color name="statusbar">#007685</color>
+
+</resources>

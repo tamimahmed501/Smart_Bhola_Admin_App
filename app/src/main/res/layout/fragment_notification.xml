@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".notification">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/topbar"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/hind"
+            android:text="কাস্টম পুশ নোটিফিকেশন"
+            android:textColor="#EFEAEA"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#92CADEED"
+        app:tabIndicatorColor="#191919"
+        app:tabTextColor="#000000"
+        app:tabSelectedTextColor="#272727"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/tabLayout">
+
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="সকল ইউজার"/>
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="নিদৃষ্ট ইউজার"/>
+
+
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framelayout"/>
+
+
+
+</LinearLayout>

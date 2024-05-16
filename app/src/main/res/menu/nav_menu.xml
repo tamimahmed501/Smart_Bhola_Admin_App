@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group
+        android:id="@+id/group1">
+
+
+
+
+
+    <item android:title="Log Out"
+        android:id="@+id/logout"
+        android:iconTint="#000000"
+        android:icon="@drawable/logout"
+        android:checkable="true"
+
+
+        />
+
+    <item android:title="Advertisment 1"
+        android:id="@+id/ad1"
+        android:iconTint="#000000"
+        android:icon="@drawable/adv"
+        android:checkable="true"
+
+        />
+
+
+    <item android:title="Advertisment 2"
+        android:id="@+id/ad2"
+        android:iconTint="#000000"
+        android:icon="@drawable/adv"
+        android:checkable="true"
+
+        />
+
+
+
+    <item android:title="Advertisment 3"
+        android:id="@+id/ad3"
+        android:iconTint="#000000"
+        android:icon="@drawable/adv"
+        android:checkable="true"
+
+        />
+
+
+    </group>
+
+
+
+
+
+
+    <group
+        android:id="@+id/group2"
+
+        >
+
+
+
+
+
+        <item android:title="User Comment"
+            android:id="@+id/comment"
+            android:iconTint="#000000"
+            android:icon="@drawable/comment"
+            android:checkable="true"
+
+
+            />
+
+        <item android:title="Recommendations"
+            android:id="@+id/recommend"
+            android:iconTint="#000000"
+            android:iconTintMode="src_atop"
+            android:icon="@drawable/reccomondation"
+            android:checkable="true"
+
+            />
+
+
+        <item android:title="Updates Notification"
+            android:id="@+id/update"
+            android:iconTint="#000000"
+            android:icon="@drawable/update"
+            android:checkable="true"
+
+            />
+
+
+
+
+
+    </group>
+
+
+
+
+
+
+
+
+
+</menu>
