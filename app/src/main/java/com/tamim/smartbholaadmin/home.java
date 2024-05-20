@@ -42,7 +42,7 @@ public class home extends Fragment {
 
     CardView union,upozila,postoffice,emergency,police,sim,hospital,diagnostic, addbalance, balanceWithdraw;
 
-    CardView blooddonor,foundation,ambulance,lawyer,freedoctor,simoffer,reporter,member,curier,biddut, bus;
+    CardView blooddonor,foundation,ambulance,lawyer,freedoctor,simoffer,reporter,member,curier,biddut, bus, notify;
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -99,7 +99,7 @@ public class home extends Fragment {
         totalrecarge = myView.findViewById(R.id.totalrecharge);
         totalsell = myView.findViewById(R.id.totalsell);
         totaluser = myView.findViewById(R.id.totaluser);
-
+        notify = myView.findViewById(R.id.notify);
 
         drawer = myView.findViewById(R.id.drawer);
         navigationView = myView.findViewById(R.id.nevigation);
@@ -282,6 +282,15 @@ public class home extends Fragment {
             }
         });
 
+
+
+
+        notify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), com.tamim.smartbholaadmin.notifyadmin.class));
+            }
+        });
 
 
 

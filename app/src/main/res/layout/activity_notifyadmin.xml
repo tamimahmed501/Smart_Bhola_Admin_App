@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notifyadmin">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="@color/topbar"
+      android:layout_height="50dp">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="15dp"
+        android:scaleType="centerCrop"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/backbutton"/>
+
+
+    <TextView
+        android:id="@+id/toptext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Notification data"
+        android:textStyle="bold"
+        android:fontFamily="@font/hind"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+
+
+
+  </RelativeLayout>
+
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBFF"
+        android:divider="@color/white"
+        android:id="@+id/listView"/>
+
+
+
+
+
+  </LinearLayout>
+
+
+
+  </LinearLayout>
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="50dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/load1" />
+
+
+
+
+  </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
