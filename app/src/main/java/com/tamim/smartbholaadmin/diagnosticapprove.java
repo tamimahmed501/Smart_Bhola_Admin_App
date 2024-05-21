@@ -216,6 +216,15 @@ public class diagnosticapprove extends Fragment {
 
 
 
+            holder.imageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uid1;
+                    startActivity(new Intent(getContext(), uidData.class));
+                }
+            });
+
 
             holder.approve.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -46,6 +46,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.textfield.TextInputEditText;
 import com.squareup.picasso.Picasso;
@@ -67,6 +68,7 @@ public class diagnostic extends AppCompatActivity {
     FrameLayout frame;
 
 
+    ImageView backbutton;
 
 
     @SuppressLint("MissingInflatedId")
@@ -77,8 +79,16 @@ public class diagnostic extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabLayout);
         frame = findViewById(R.id.frame);
+        backbutton = backbutton;
 
 
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                Animatoo.animateSwipeRight(diagnostic.this);
+            }
+        });
 
         FragmentManager fmx = getSupportFragmentManager();
         FragmentTransaction fragmentTransactionx = fmx.beginTransaction();

@@ -145,7 +145,7 @@ public class ambulenceapprove extends Fragment {
                                 String number = jsonObject.getString("number");
                                 String pname = jsonObject.getString("pname");
                                 String images = jsonObject.getString("images");
-
+                                String uid  = jsonObject.getString("uid");
 
 
 
@@ -158,7 +158,7 @@ public class ambulenceapprove extends Fragment {
                                 hashMap.put("id", id);
                                 hashMap.put("number", number);
                                 hashMap.put("images", images);
-
+                                hashMap.put("uid", uid);
                                 arrayList.add(hashMap);
 
 
@@ -224,10 +224,11 @@ public class ambulenceapprove extends Fragment {
 
             ImageView imageView1 = viewx.findViewById(R.id.imageView1);
 
-            CardView approve, call, cancel;
+            CardView approve, call, cancel, card;
             call = viewx.findViewById(R.id.card);
             cancel = viewx.findViewById(R.id.cancel);
             approve = viewx.findViewById(R.id.approve);
+            card = viewx.findViewById(R.id.card);
 
 
 
@@ -241,6 +242,8 @@ public class ambulenceapprove extends Fragment {
             String images = hashMap.get("images");
             String id = hashMap.get("id");
             String pnamex = hashMap.get("pname");
+            String uid = hashMap.get("uid");
+
 
 
 
@@ -263,6 +266,14 @@ public class ambulenceapprove extends Fragment {
 
 
 
+            imageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uid;
+                    startActivity(new Intent(getContext(), uidData.class));
+                }
+            });
 
             call.setOnClickListener(new View.OnClickListener() {
                 @Override

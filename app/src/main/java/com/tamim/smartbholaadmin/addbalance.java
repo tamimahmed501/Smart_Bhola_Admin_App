@@ -4,10 +4,12 @@ import static android.view.View.VISIBLE;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -159,6 +161,7 @@ public class addbalance extends AppCompatActivity {
             TextView uid, amount,time,tid,catagory,method,number;
 
 
+            CardView card;
 
 
 
@@ -175,7 +178,7 @@ public class addbalance extends AppCompatActivity {
                 catagory = itemView.findViewById(R.id.catagory);
                 time = itemView.findViewById(R.id.time);
                 number = itemView.findViewById(R.id.number);
-
+                card = itemView.findViewById(R.id.card);
 
 
 
@@ -229,6 +232,16 @@ public class addbalance extends AppCompatActivity {
             holder.method.setText("Method: "+methodx);
             holder.number.setText("Number: "+numberx);
             holder.time.setText("Time: "+timex);
+
+
+            holder.card.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uidx;
+                    startActivity(new Intent(addbalance.this, uidData.class));
+                }
+            });
 
 
 

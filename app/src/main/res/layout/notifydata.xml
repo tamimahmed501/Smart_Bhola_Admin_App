@@ -8,104 +8,126 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:foreground="?attr/selectableItemBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="5dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp">
-
-
-
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="10dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
 
-            <RelativeLayout
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/telephone">
+
+            </ImageView>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:background="@color/statusbar"
-                android:layout_height="45dp">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerInParent="true"
-                    android:fontFamily="@font/prantobold"
-                    android:gravity="center|left"
-                    android:paddingLeft="10dp"
-                    android:text="call Alter!"
-                    android:textColor="#E8FFFFFF"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/uid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:fontFamily="@font/mustafakamal"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="18dp"
-                    android:text="0"
-                    android:textColor="#E8FFFFFF"
-                    android:textSize="19dp" />
-
-
-
-            </RelativeLayout>
-
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-
-
-
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/mustafakamal"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="Call Alert!"
+                        android:textColor="#E8FF2B2B"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/mustafakamal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="18dp"
+                        android:text="0"
+                        android:textColor="#E8FFFFFF"
+                        android:textSize="19dp" />
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
 
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
 
-                        <TextView
-                            android:id="@+id/body"
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Someone try to send sonti"
-                            android:fontFamily="@font/mavenpro"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="20dp"
-                            android:textColor="#333333"/>
+                            android:paddingLeft="10dp"
+                            android:orientation="vertical">
 
 
+                            <TextView
+                                android:id="@+id/body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Someone try to send sonti"
+                                android:fontFamily="@font/mavenpro"
+                                android:textSize="17dp"
+                                android:textStyle="bold"
+                                android:paddingBottom="20dp"
+                                android:textColor="#333333"/>
+
+
+
+
+                        </LinearLayout>
 
 
                     </LinearLayout>
 
 
-                </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
 
 
 
@@ -113,16 +135,13 @@
 
 
 
-            </RelativeLayout>
 
-
-
-
-
+            </LinearLayout>
 
 
 
         </LinearLayout>
+
 
 
 

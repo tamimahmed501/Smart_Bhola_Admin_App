@@ -199,6 +199,17 @@ public class tutionpost extends Fragment implements SearchView.OnQueryTextListen
             holder.tid.setText("Tution: #"+id);
 
 
+
+
+            holder.profilepic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uid;
+                    startActivity(new Intent(getContext(), uidData.class));
+                }
+            });
+
             holder.card.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

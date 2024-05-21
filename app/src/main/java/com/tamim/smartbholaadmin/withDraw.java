@@ -167,7 +167,7 @@ public class withDraw extends AppCompatActivity {
 
             TextView uid, amount,time,reason,catagory,method,number;
 
-            CardView approve, cancel, call;
+            CardView approve, cancel, call, card;
 
 
 
@@ -188,6 +188,7 @@ public class withDraw extends AppCompatActivity {
                 approve = itemView.findViewById(R.id.approve);
                 cancel = itemView.findViewById(R.id.cancel);
                 call = itemView.findViewById(R.id.call);
+                card = itemView.findViewById(R.id.card);
 
 
 
@@ -243,6 +244,15 @@ public class withDraw extends AppCompatActivity {
             holder.number.setText("Number: "+numberx);
             holder.time.setText("Time: "+timex);
 
+
+            holder.card.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uidx;
+                    startActivity(new Intent(withDraw.this, uidData.class));
+                }
+            });
 
 
 

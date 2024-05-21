@@ -46,6 +46,7 @@
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
                         android:src="@drawable/ambulance"
+                        android:foreground="?attr/selectableItemBackground"
                         android:padding="10dp"/>
 
 

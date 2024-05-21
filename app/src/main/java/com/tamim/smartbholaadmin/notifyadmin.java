@@ -3,9 +3,11 @@ package com.tamim.smartbholaadmin;
 import static android.view.View.VISIBLE;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -156,13 +158,15 @@ public class notifyadmin extends AppCompatActivity {
             TextView uid, title, body;
 
 
+            CardView card;
+
 
 
 
             uid = viewx.findViewById(R.id.uid);
             title = viewx.findViewById(R.id.title);
             body = viewx.findViewById(R.id.body);
-
+            card = viewx.findViewById(R.id.card);
 
             HashMap<String,String> hashMap = arrayList.get(position);
             String uid1 = hashMap.get("uid");
@@ -176,6 +180,14 @@ public class notifyadmin extends AppCompatActivity {
             title.setText(title1);
             body.setText(body1);
 
+            card.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uid1;
+                    startActivity(new Intent(notifyadmin.this, uidData.class));
+                }
+            });
 
 
 

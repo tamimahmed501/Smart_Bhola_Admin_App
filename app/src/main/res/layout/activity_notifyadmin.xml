@@ -37,7 +37,7 @@
         android:id="@+id/toptext"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Notification data"
+        android:text="CALL NOTIFICATION"
         android:textStyle="bold"
         android:fontFamily="@font/hind"
         android:gravity="center"

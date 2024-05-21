@@ -193,6 +193,17 @@ public class approvedtution extends Fragment implements SearchView.OnQueryTextLi
 
 
 
+            holder.profilepic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uid;
+                    startActivity(new Intent(getContext(), uidData.class));
+                }
+            });
+
+
+
 
             String urlx = "https://wikipediabangla.com/apps/Images/"+images;
 

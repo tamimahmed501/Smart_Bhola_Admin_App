@@ -141,7 +141,7 @@ public class ambulencelistview extends Fragment {
                                 String number = jsonObject.getString("number");
                                 String pname = jsonObject.getString("pname");
                                 String images = jsonObject.getString("images");
-
+                                String uid  = jsonObject.getString("uid");
 
 
 
@@ -154,6 +154,7 @@ public class ambulencelistview extends Fragment {
                                 hashMap.put("id", id);
                                 hashMap.put("number", number);
                                 hashMap.put("images", images);
+                                hashMap.put("uid", uid);
 
                                 arrayList.add(hashMap);
 
@@ -232,14 +233,14 @@ public class ambulencelistview extends Fragment {
             String images = hashMap.get("images");
             String id = hashMap.get("id");
             String pnamex = hashMap.get("pname");
+            String uid = hashMap.get("uid");
 
 
 
-
-            name1.setText(namex);
+            name1.setText(pnamex);
             mobile1.setText("মোবাইলঃ  "+numberx);
             adress1.setText("সার্ভিস এরিয়াঃ  "+areax);
-            upozila1.setText("প্রোপাইটরঃ  "+pnamex);
+            upozila1.setText("প্রোপাইটরঃ  "+namex);
 
 
 
@@ -249,6 +250,14 @@ public class ambulencelistview extends Fragment {
             delete = viewx.findViewById(R.id.delete);
             CardView cardView = viewx.findViewById(R.id.card);
 
+            imageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=uid;
+                    startActivity(new Intent(getContext(), uidData.class));
+                }
+            });
 
 
 

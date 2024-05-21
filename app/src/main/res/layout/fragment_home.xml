@@ -1559,6 +1559,7 @@
                                 android:layout_gravity="center"
                                 android:scaleType="centerCrop"
                                 android:layout_weight="1"
+                                android:src="@drawable/telephone"
                                 android:layout_marginTop="20dp"
                                 android:padding="24dp"/>
 
@@ -1570,7 +1571,7 @@
                                 android:gravity="center"
                                 android:textColor="@color/black"
                                 android:textSize="15dp"
-                                android:text="notification"
+                                android:text="Call History"
                                 android:paddingBottom="10dp"
                                 android:fontFamily="@font/hind"/>
 

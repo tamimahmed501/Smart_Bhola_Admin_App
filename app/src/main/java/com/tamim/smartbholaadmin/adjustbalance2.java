@@ -4,8 +4,10 @@ import static android.view.View.VISIBLE;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -171,6 +173,7 @@ public class adjustbalance2 extends Fragment {
 
 
 
+
             admin1 = viewx.findViewById(R.id.admin);
             id1 = viewx.findViewById(R.id.uid);
             time1 = viewx.findViewById(R.id.time);
@@ -200,7 +203,20 @@ public class adjustbalance2 extends Fragment {
             admin1.setText("Submit by: "+admin);
 
 
+            CardView card;
+            card = viewx.findViewById(R.id.card);
 
+
+
+
+            card.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    uidData.UID=id;
+                    startActivity(new Intent(getContext(), uidData.class));
+                }
+            });
 
 
 

@@ -272,6 +272,8 @@ public class reporter extends AppCompatActivity {
                     .into(imageView1);
 
 
+
+
             CardView approve, call, cancel;
             call = viewx.findViewById(R.id.card);
             cancel = viewx.findViewById(R.id.cancel);
