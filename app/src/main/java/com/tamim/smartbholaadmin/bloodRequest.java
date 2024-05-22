@@ -422,7 +422,7 @@ public class bloodRequest extends Fragment {
 
                                 android.app.AlertDialog alertDialog = new android.app.AlertDialog.Builder(getContext()).create();
                                 alertDialog.setTitle("Alert");
-                                alertDialog.setMessage("Ambulence Approved successfully.");
+                                alertDialog.setMessage("Blood Request Approved successfully.");
                                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.dismiss();
@@ -434,6 +434,32 @@ public class bloodRequest extends Fragment {
                                 });
                                 alertDialog.show();
                                 alertDialog.setCancelable(true);
+
+
+                                String myBody = "জরুরি ভিত্তিতে একজন "+problemx+" রোগীর জন্য "+hospital+" এ রক্ত প্রয়োজন।💉🩸\nবিস্তারিত অ্যাপ এ দেখুন।";
+                                String myTitle = "সম্মানিত ইউজার, আপনার সহযোগীতা প্রয়োজন!";
+
+
+                                String url1 = "https://wikipediabangla.com/apps/firebase/fcm.php?body="+myBody+"&title="+myTitle;
+                                StringRequest stringRequest = new StringRequest(0, url1, new Response.Listener<String>() {
+                                    @Override
+                                    public void onResponse(String response) {
+
+
+
+
+
+
+                                    }
+                                }, new Response.ErrorListener() {
+                                    @Override
+                                    public void onErrorResponse(VolleyError error) {
+
+                                    }
+                                });
+
+                                RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+                                requestQueue.add(stringRequest);
 
 
                                 ambulence();
